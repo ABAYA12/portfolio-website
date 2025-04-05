@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-content">
+                <h1>My <span class="highlight">Portfolio</span></h1>
+                <p class="lead">A showcase of my projects and work</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter Section -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="data">Data Engineering</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Projects Section -->
+    <section class="portfolio-projects">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- RiskGuard AI Data Streaming Pipeline -->
+                <div class="project-item" data-category="data">
+                    <div class="project-img">
+                        <img src="images/riskguard_project.jpg" alt="RiskGuard AI Data Streaming Pipeline">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link" data-modal="modal-1"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>RiskGuard AI Data Streaming Pipeline</h3>
+                        <p>Data Engineering</p>
+                    </div>
+                </div>
+                <!-- Project 7 (TrustID) -->
+    <div class="project-item" data-category="data">
+        <div class="project-img">
+            <img src="images/project7.jpg" alt="TrustID - Blockchain Digital Identity Verification">
+            <div class="project-overlay">
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                    <a href="#" class="project-link" data-modal="modal-7"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>TrustID - Blockchain Digital Identity Verification</h3>
+            <p>Blockchain, Digital Identity</p>
+        </div>
+    </div>
+
+    <!-- Project 7 Modal (TrustID) -->
+    <div class="modal" id="modal-7">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>TrustID - Blockchain Digital Identity Verification</h2>
+                <p>Blockchain, Digital Identity</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-img">
+                    <img src="images/project7.jpg" alt="TrustID - Blockchain Digital Identity Verification">
+                </div>
+                <div class="modal-description">
+                    <h3>Project Overview</h3>
+                    <p>TrustID is a blockchain-powered digital identity verification system that ensures secure, tamper-proof, and verifiable credentials. Built on Hyperledger Indy and PostgreSQL, TrustID allows users to manage and share their credentials (e.g., National ID, Passports, Degrees) with organizations in a privacy-preserving, decentralized way.</p>
+                    
+                    <h3>Features</h3>
+                    <ul class="tech-list">
+                        <li>Decentralized Identifiers (DIDs) for secure user authentication</li>
+                        <li>Verifiable Credentials stored on blockchain for authenticity</li>
+                        <li>Automated Data Extraction using OCR/AI for easy document verification</li>
+                        <li>Revocation Registry to track and prevent fraudulent credentials</li>
+                        <li>Seamless Integration for organizations to verify credentials in real-time</li>
+                    </ul>
+
+                    <h3>Technologies Used</h3>
+                    <ul class="tech-list">
+                        <li>Blockchain Ledger: Hyperledger Indy → Decentralized Identity Ledger</li>
+                        <li>Database: PostgreSQL → User & Credential Storage</li>
+                        <li>Encryption: OpenSSL → Encryption & Key Management</li>
+                        <li>Dev Environment: VS Code, Jupyter Notebook</li>
+                        <li>Scripting: Python</li>
+                    </ul>
+
+                    <h3>My Role</h3>
+                    <p>I played a key role in the integration of the blockchain infrastructure, user authentication with DIDs, and the development of the automated data extraction system using OCR/AI. I also helped in setting up the database schema and implementing encryption mechanisms to secure user data.</p>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn primary-btn">View Live</a>
+                        <a href="#" class="btn secondary-btn">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <!-- Weather Data Ingestion Pipeline -->
+                <div class="project-item" data-category="data">
+                    <div class="project-img">
+                        <img src="images/weather_project.jpg" alt="Weather Data Ingestion Pipeline">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link" data-modal="modal-2"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Data Ingestion Pipeline</h3>
+                        <p>Data Engineering</p>
+                    </div>
+                </div>
+
+                <!-- Binance Data Pipeline -->
+                <div class="project-item" data-category="data">
+                    <div class="project-img">
+                        <img src="images/binance_project.jpg" alt="Binance Data Pipeline">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link" data-modal="modal-3"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Binance Data Pipeline</h3>
+                        <p>Data Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="modal-container">
+        <!-- Modal 1 -->
+        <div class="modal" id="modal-1">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h2>RiskGuard AI Data Streaming Pipeline</h2>
+                    <p>Data Engineering</p>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img">
+                        <img src="images/riskguard_project.jpg" alt="RiskGuard AI Data Streaming Pipeline">
+                    </div>
+                    <div class="modal-description">
+                        <h3>Project Overview</h3>
+                        <p>This project involves building a real-time data streaming pipeline using Kafka and Spark, designed to process risk data for companies using AI-powered insights.</p>
+                        
+                        <h3>Technologies Used</h3>
+                        <ul class="tech-list">
+                            <li>Apache Kafka</li>
+                            <li>Apache Spark</li>
+                            <li>Apache Airflow</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        
+                        <h3>My Role</h3>
+                        <p>Designed and implemented the data pipeline, integrated real-time streaming, and ensured smooth data flow for continuous risk predictions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal" id="modal-2">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h2>Weather Data Ingestion Pipeline</h2>
+                    <p>Data Engineering</p>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img">
+                        <img src="images/weather_project.jpg" alt="Weather Data Ingestion Pipeline">
+                    </div>
+                    <div class="modal-description">
+                        <h3>Project Overview</h3>
+                        <p>This pipeline ingests real-time weather data, processing it for analysis and providing insights to decision-makers.</p>
+                        
+                        <h3>Technologies Used</h3>
+                        <ul class="tech-list">
+                            <li>Apache Kafka</li>
+                            <li>Apache Spark</li>
+                            <li>Python</li>
+                        </ul>
+                        
+                        <h3>My Role</h3>
+                        <p>Built the ingestion pipeline for collecting weather data, ensuring real-time updates and integration with analytical systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal" id="modal-3">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h2>Binance Data Pipeline</h2>
+                    <p>Data Engineering</p>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img">
+                        <img src="images/binance_project.jpg" alt="Binance Data Pipeline">
+                    </div>
+                    <div class="modal-description">
+                        <h3>Project Overview</h3>
+                        <p>Created a data pipeline to collect and process cryptocurrency market data from Binance for real-time analytics.</p>
+                        
+                        <h3>Technologies Used</h3>
+                        <ul class="tech-list">
+                            <li>Python</li>
+                            <li>API Integration</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        
+                        <h3>My Role</h3>
+                        <p>Designed and implemented the Binance data pipeline, focusing on collecting and processing real-time market data for analysis and reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Interested in Working Together?</h2>
+            <p>Let's discuss your project and see how I can help bring your ideas to life.</p>
+            <a href="contact.html" class="btn primary-btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Portfolio</a>
+                    <p>Creating amazing digital experiences.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> City, Country</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
